@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">MicroChat</string>
+    <string name="dialog_exit_confirm">Comfirm</string>
+    <string name="dialog_exit_cancel">Cancel</string>
+
+    <array name="items_exitdialog_type">
+        <item>LogOff</item>
+        <item>AppStop</item>
+    </array>
+
+</resources>

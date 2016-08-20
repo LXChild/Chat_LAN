@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background02"
+    android:orientation="vertical" >
+
+    <com.jeremyfeinstein.slidingmenu.lib.SlidingMenu
+        android:id="@+id/slidingMenuLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingTop="30dp" >
+
+        <TextView
+            android:id="@+id/tv_sm_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <ToggleButton
+            android:id="@+id/togbtn_create"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_sm_username"
+            android:layout_marginTop="15dp"
+            android:checked="false"
+            android:textOff="CreateServer"
+            android:textOn="StopServer" />
+
+        <Button
+            android:id="@+id/btn_scanLAN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/togbtn_create"
+            android:text="ScanTheLAN" />
+
+        <Button
+            android:id="@+id/btn_enter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_scanLAN"
+            android:text="ConnectToLocalServer" />
+
+        <Button
+            android:id="@+id/btn_connect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_enter"
+            android:text="ConnectToAssignServer" />
+
+        <Button
+            android:id="@+id/btn_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_connect"
+            android:text="Settings" />
+
+        <Button
+            android:id="@+id/btn_about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_settings"
+            android:text="AboutMicroChat" />
+
+        <Button
+            android:id="@+id/btn_exit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_about"
+            android:text="Exit" />
+    </com.jeremyfeinstein.slidingmenu.lib.SlidingMenu>
+
+</LinearLayout>

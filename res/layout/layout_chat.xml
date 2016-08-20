@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background03"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/sv_show"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="5dp" />
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/et_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="More"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <ImageButton
+            android:id="@+id/ib_voice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="voice"
+            android:src="@drawable/voice" />
+
+        <ImageButton
+            android:id="@+id/ib_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="photo"
+            android:src="@drawable/camera" />
+
+        <ImageButton
+            android:id="@+id/ib_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="video"
+            android:src="@drawable/video" />
+
+        <ImageButton
+            android:id="@+id/ib_file"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="file"
+            android:src="@drawable/folder" />
+    </LinearLayout>
+
+</LinearLayout>

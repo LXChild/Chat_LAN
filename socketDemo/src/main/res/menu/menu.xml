@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/item_01"
+        android:icon="@drawable/l"
+        android:showAsAction="never"
+        android:title="Add"/>
+    <item
+        android:id="@+id/item_02"
+        android:icon="@drawable/l"
+        android:showAsAction="never"
+        android:title="Add"/>
+
+</menu>
